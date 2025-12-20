@@ -71,7 +71,8 @@ main {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-weight: 400;
   line-height: 1.2;
   margin-bottom: var(--space-md);
 }
@@ -121,8 +122,34 @@ a:hover {
 
 .hero-title {
   font-size: var(--text-7xl);
-  font-weight: 800;
+  font-weight: 300;
   letter-spacing: -0.02em;
+}
+
+/* Turret Road Utility Classes */
+.turret-road-extralight {
+  font-family: "Turret Road", sans-serif;
+  font-weight: 200;
+}
+.turret-road-light {
+  font-family: "Turret Road", sans-serif;
+  font-weight: 300;
+}
+.turret-road-regular {
+  font-family: "Turret Road", sans-serif;
+  font-weight: 400;
+}
+.turret-road-medium {
+  font-family: "Turret Road", sans-serif;
+  font-weight: 500;
+}
+.turret-road-bold {
+  font-family: "Turret Road", sans-serif;
+  font-weight: 700;
+}
+.turret-road-extrabold {
+  font-family: "Turret Road", sans-serif;
+  font-weight: 800;
 }
 
 .hero-actions {
