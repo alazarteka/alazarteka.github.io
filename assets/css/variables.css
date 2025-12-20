@@ -1,13 +1,13 @@
 /* CSS Custom Properties / Design System */
 :root {
   /* Colors */
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #1a1a1a;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --accent-1: #3b82f6; /* electric blue */
-  --accent-2: #f97316; /* warm orange */
-  --accent-3: #8b5cf6; /* purple */
+  --bg-primary: #121212; /* Deep matte charcoal */
+  --bg-secondary: #1e1e1e;
+  --text-primary: #e2e8f0; /* Soft off-white */
+  --text-secondary: #94a3b8; /* Muted slate */
+  --accent-1: #8ba88e; /* Sage Green */
+  --accent-2: #708a73; /* Muted Forest */
+  --accent-3: #5b705d; /* Deep Sage */
 
   /* Typography */
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
@@ -50,7 +50,7 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 
   /* Cellular Automaton */
-  --automaton-opacity: 0.3;
+  --automaton-opacity: 0.15;
   --automaton-cell-color: var(--accent-1);
 }
 
