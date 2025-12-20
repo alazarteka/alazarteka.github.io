@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog
+description: Thoughts and writings
+---
+
+<div class="blog-index">
+  <h1>Blog</h1>
+
+  {% for post in site.posts %}
+  <article class="post-preview">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <time datetime="{{ post.date | date_to_xmlschema }}">
+      {{ post.date | date: "%B %-d, %Y" }}
+    </time>
+    {% if post.description %}
+      <p class="description">{{ post.description }}</p>
+    {% elsif post.excerpt %}
+      <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    {% endif %}
+  </article>
+  {% endfor %}
+
+  {% if site.posts.size == 0 %}
+  <p class="no-posts">No posts yet. Check back soon!</p>
+  {% endif %}
+</div>
