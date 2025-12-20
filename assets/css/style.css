@@ -71,8 +71,7 @@ main {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--space-md);
 }
@@ -122,7 +121,7 @@ a:hover {
 
 .hero-title {
   font-size: var(--text-7xl);
-  font-weight: 300;
+  font-weight: 800;
   letter-spacing: -0.02em;
 }
 
