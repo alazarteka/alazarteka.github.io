@@ -153,9 +153,15 @@ a:hover {
   font-weight: 800;
 }
 
-.buda-light {
-  font-family: "Buda", serif;
+.josefin-slab-light {
+  font-family: "Josefin Slab", serif;
   font-weight: 300;
+  font-style: normal;
+}
+
+.josefin-slab-regular {
+  font-family: "Josefin Slab", serif;
+  font-weight: 400;
   font-style: normal;
 }
 
