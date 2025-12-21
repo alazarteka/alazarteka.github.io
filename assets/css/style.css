@@ -39,7 +39,7 @@ body {
 .nav-link {
   color: var(--text-secondary);
   font-size: var(--text-base);
-  font-weight: 500;
+  font-weight: 400;
   transition: color var(--transition-base);
   position: relative;
 }
@@ -176,7 +176,7 @@ a:hover {
   padding: var(--space-sm) var(--space-xl);
   border-radius: 100px;
   font-size: var(--text-base);
-  font-weight: 500;
+  font-weight: 400;
   transition: all var(--transition-base);
   border: 1px solid var(--accent-1);
 }
@@ -443,12 +443,10 @@ a:hover {
 }
 
 .error-code {
+  font-family: var(--font-heading);
   font-size: var(--text-7xl);
   font-weight: 800;
-  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 .error-message {
