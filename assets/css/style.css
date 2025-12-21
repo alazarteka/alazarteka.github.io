@@ -96,9 +96,9 @@ h3 {
 
 p {
   font-size: var(--text-lg);
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: var(--space-md);
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 a {
