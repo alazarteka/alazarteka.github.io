@@ -1,0 +1,13 @@
+- name: Personal Site
+  description: Custom GitHub Pages site with cellular automaton background. Built with Jekyll, vanilla JavaScript, and CSS.
+  links:
+    - label: Source
+      url: https://github.com/alazarteka/alazarteka.github.io
+
+# - name: Another Project
+#   description: What it does.
+#   links:
+#     - label: Source
+#       url: https://github.com/...
+#     - label: Demo
+#       url: https://...
