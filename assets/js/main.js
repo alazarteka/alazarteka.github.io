@@ -2,6 +2,26 @@
 (function() {
   'use strict';
 
+  // Theme toggle functionality
+  function initThemeToggle() {
+    const toggle = document.querySelector('.theme-toggle');
+    if (!toggle) return;
+
+    toggle.addEventListener('click', function() {
+      const currentTheme = document.documentElement.dataset.theme;
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.dataset.theme = newTheme;
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Listen for system preference changes (only if no manual override)
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function(e) {
+      if (!localStorage.getItem('theme')) {
+        document.documentElement.dataset.theme = e.matches ? 'light' : 'dark';
+      }
+    });
+  }
+
   // Add active state to navigation
   function updateActiveNav() {
     const currentPath = window.location.pathname;
@@ -38,6 +58,7 @@
   function init() {
     updateActiveNav();
     initSmoothScroll();
+    initThemeToggle();
   }
 
   if (document.readyState === 'loading') {

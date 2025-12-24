@@ -34,7 +34,7 @@ body {
   gap: var(--space-xl);
   padding: var(--space-md) var(--space-lg);
   background-color: var(--bg-primary); /* Solid background for cleaner look */
-  border-bottom: 1px solid var(--bg-secondary);
+  border-bottom: 2px solid var(--bg-secondary);
   font-family: var(--font-sans);
 }
 
@@ -55,8 +55,33 @@ body {
 
 .nav-link.active {
   color: var(--text-primary);
-  border-bottom: 1px solid var(--accent-1);
+  border-bottom: 2px solid var(--accent-1);
 }
+
+/* Theme Toggle */
+.theme-toggle {
+  background: none;
+  border: none;
+  padding: var(--space-xs);
+  cursor: pointer;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-base);
+  margin-left: var(--space-md);
+}
+
+.theme-toggle:hover {
+  color: var(--text-primary);
+}
+
+/* Show sun in dark mode, moon in light mode */
+.icon-moon { display: none; }
+.icon-sun { display: block; }
+
+[data-theme="light"] .icon-moon { display: block; }
+[data-theme="light"] .icon-sun { display: none; }
 
 /* Main Content */
 main {
@@ -86,7 +111,7 @@ h1 {
 h2 {
   font-size: var(--text-3xl);
   margin-top: var(--space-2xl);
-  border-bottom: 1px solid var(--bg-secondary);
+  border-bottom: 2px solid var(--bg-secondary);
   padding-bottom: var(--space-sm);
 }
 
@@ -168,6 +193,7 @@ a:hover {
 .btn-primary:hover {
   background-color: var(--accent-2);
   border-color: var(--accent-2);
+  color: #fff;
   transform: translateY(-1px);
 }
 
@@ -218,7 +244,7 @@ a:hover {
 
 .project-card {
   background-color: transparent;
-  border: 1px solid var(--bg-secondary);
+  border: 2px solid var(--bg-secondary);
   border-radius: 4px;
   padding: var(--space-lg);
   transition: border-color var(--transition-base);
@@ -273,7 +299,7 @@ a:hover {
 .post-preview {
   margin-bottom: var(--space-2xl);
   padding-bottom: var(--space-xl);
-  border-bottom: 1px solid var(--bg-secondary);
+  border-bottom: 2px solid var(--bg-secondary);
 }
 
 .post-preview h2 {
@@ -375,7 +401,7 @@ a:hover {
 }
 
 .post-content blockquote {
-  border-left: 3px solid var(--accent-1);
+  border-left: 4px solid var(--accent-1);
   padding-left: var(--space-lg);
   margin: var(--space-xl) 0;
   font-style: italic;
@@ -390,7 +416,7 @@ a:hover {
   color: var(--text-secondary);
   font-family: var(--font-sans);
   font-size: var(--text-sm);
-  border-top: 1px solid var(--bg-secondary);
+  border-top: 2px solid var(--bg-secondary);
   margin-top: var(--space-3xl);
 }
 

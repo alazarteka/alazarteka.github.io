@@ -3,11 +3,11 @@
   /* Colors */
   --bg-primary: #111111; /* True dark/black */
   --bg-secondary: #1a1a1a;
-  --text-primary: #f0f0f0; /* High contrast white */
-  --text-secondary: #a0a0a0; /* Neutral grey */
-  --accent-1: #8ba88e; /* Sage Green */
-  --accent-2: #708a73; /* Muted Forest */
-  --accent-3: #5b705d; /* Deep Sage */
+  --text-primary: #ffffff; /* Pure white for max contrast */
+  --text-secondary: #b0b0b0; /* Brighter grey */
+  --accent-1: #7fb69c; /* Teal-green, less mossy */
+  --accent-2: #6ba38a; /* Slightly darker teal */
+  --accent-3: #5a9078; /* Deep teal */
 
   /* Typography */
   --font-heading: 'Inter', sans-serif;
@@ -56,13 +56,28 @@
   --automaton-cell-color: var(--text-secondary);
 }
 
-/* Light mode (optional) */
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8f9fa;
-    --text-primary: #111111;
-    --text-secondary: #555555;
-    --accent-1: #5b705d; /* Deeper Sage for light mode contrast */
-  }
+/* Light mode */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --text-primary: #1a1a1a; /* Near black for max contrast */
+  --text-secondary: #4a4a4a; /* Darker grey */
+  --accent-1: #3d6b5c; /* Darker, bluer teal */
+  --accent-2: #2d5a4c; /* Even darker for hover */
+  --accent-3: #1d493c;
+  --automaton-opacity: 0.06;
+  --automaton-cell-color: var(--accent-1);
+}
+
+/* Explicit dark mode (for overriding system light preference) */
+[data-theme="dark"] {
+  --bg-primary: #111111;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --accent-1: #7fb69c;
+  --accent-2: #6ba38a;
+  --accent-3: #5a9078;
+  --automaton-opacity: 0.08;
+  --automaton-cell-color: var(--text-secondary);
 }
