@@ -1,17 +1,18 @@
 /* CSS Custom Properties / Design System */
 :root {
   /* Colors */
-  --bg-primary: #121212; /* Deep matte charcoal */
-  --bg-secondary: #1e1e1e;
-  --text-primary: #e2e8f0; /* Soft off-white */
-  --text-secondary: #94a3b8; /* Muted slate */
+  --bg-primary: #111111; /* True dark/black */
+  --bg-secondary: #1a1a1a;
+  --text-primary: #f0f0f0; /* High contrast white */
+  --text-secondary: #a0a0a0; /* Neutral grey */
   --accent-1: #8ba88e; /* Sage Green */
   --accent-2: #708a73; /* Muted Forest */
   --accent-3: #5b705d; /* Deep Sage */
 
   /* Typography */
-  --font-heading: 'Turret Road', sans-serif;
-  --font-sans: 'Josefin Slab', serif;
+  --font-heading: 'Inter', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'EB Garamond', serif;
   --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', monospace;
 
   /* Font Sizes */
@@ -37,8 +38,8 @@
   --space-3xl: 4rem;
 
   /* Layout */
-  --max-width: 1200px;
-  --content-width: 800px;
+  --max-width: 1100px; /* Slightly tighter for focus */
+  --content-width: 700px; /* Optimal reading width */
 
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -51,16 +52,17 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 
   /* Cellular Automaton */
-  --automaton-opacity: 0.15;
-  --automaton-cell-color: var(--accent-1);
+  --automaton-opacity: 0.08; /* Subtler */
+  --automaton-cell-color: var(--text-secondary);
 }
 
 /* Light mode (optional) */
 @media (prefers-color-scheme: light) {
   :root {
     --bg-primary: #ffffff;
-    --bg-secondary: #f5f5f5;
-    --text-primary: #0a0a0a;
-    --text-secondary: #6b7280;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #111111;
+    --text-secondary: #555555;
+    --accent-1: #5b705d; /* Deeper Sage for light mode contrast */
   }
 }

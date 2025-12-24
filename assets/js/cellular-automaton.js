@@ -163,7 +163,10 @@
           const screenY = y * CELL_SIZE * (isMobile ? (1 / MOBILE_DENSITY_REDUCTION) : 1);
           const size = CELL_SIZE * (isMobile ? (1 / MOBILE_DENSITY_REDUCTION) : 1);
 
-          ctx.fillRect(screenX, screenY, size, size);
+          // Render cells at 90% size with a gap
+          const gapSize = size * 0.9;
+          const offset = (size - gapSize) / 2;
+          ctx.fillRect(screenX + offset, screenY + offset, gapSize, gapSize);
         }
       }
     }
