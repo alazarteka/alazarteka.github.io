@@ -84,6 +84,10 @@
   background-color: #e8e5d8;
 }
 
+[data-theme="light"] .highlight pre {
+  background-color: transparent;
+}
+
 [data-theme="light"] .highlight .c { color: #6a6a6a } /* Comment */
 [data-theme="light"] .highlight .err { color: #9b2915 } /* Error */
 [data-theme="light"] .highlight .k { color: #0550ae } /* Keyword */
