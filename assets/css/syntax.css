@@ -84,7 +84,9 @@
   background-color: #e8e5d8;
 }
 
-[data-theme="light"] .highlight pre {
+[data-theme="light"] .highlight pre,
+[data-theme="light"] .highlight pre code,
+[data-theme="light"] .highlight code {
   background-color: transparent;
 }
 

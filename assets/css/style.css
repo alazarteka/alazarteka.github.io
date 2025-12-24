@@ -391,6 +391,13 @@ a:hover {
   color: var(--accent-2);
 }
 
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+}
+
 .post-content pre {
   background-color: var(--bg-secondary);
   padding: var(--space-lg);
