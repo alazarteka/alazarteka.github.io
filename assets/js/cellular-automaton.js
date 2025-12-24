@@ -4,7 +4,7 @@
 
   // Configuration
   const CELL_SIZE = 10;
-  const UPDATE_INTERVAL = 100; // milliseconds
+  const UPDATE_INTERVAL = 250; // milliseconds
   const MOBILE_DENSITY_REDUCTION = 0.5;
 
   // State
@@ -78,7 +78,7 @@
     // Random seed with 20% alive cells
     for (let y = 0; y < rows; y++) {
       for (let x = 0; x < cols; x++) {
-        grid[y][x] = Math.random() < 0.2 ? 1 : 0;
+        grid[y][x] = Math.random() < 0.1 ? 1 : 0;
       }
     }
 

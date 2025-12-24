@@ -52,7 +52,7 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 
   /* Cellular Automaton */
-  --automaton-opacity: 0.08; /* Subtler */
+  --automaton-opacity: 0.03; /* Subtler */
   --automaton-cell-color: var(--text-secondary);
 }
 
@@ -65,7 +65,7 @@
   --accent-1: #003e1f; /* Deep Forest */
   --accent-2: #002a15; /* Darker forest for hover */
   --accent-3: #001a0d;
-  --automaton-opacity: 0.08;
+  --automaton-opacity: 0.03;
   --automaton-cell-color: var(--accent-1);
 }
 
@@ -78,6 +78,6 @@
   --accent-1: #4a9a6a; /* Lighter forest green */
   --accent-2: #3a8a5a;
   --accent-3: #003e1f; /* Deep Forest */
-  --automaton-opacity: 0.08;
+  --automaton-opacity: 0.03;
   --automaton-cell-color: var(--text-secondary);
 }
